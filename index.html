@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Outsourced CFO | Financial Clarity for Growing Businesses</title>
+
+<title>Outsourced CFO | Building a World-Class Finance Function</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,199 +18,260 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:'Inter',sans-serif;
-    color:#111827;
-    line-height:1.6;
+    color:#444;
     background:#fff;
+    line-height:1.7;
 }
 
 .container{
     width:90%;
-    max-width:1200px;
+    max-width:1180px;
     margin:auto;
 }
 
 section{
-    padding:80px 0;
+    padding:90px 0;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display',serif;
+    color:#111;
+    line-height:1.1;
 }
 
 h1{
-    font-size:clamp(2.5rem,5vw,4.5rem);
-    line-height:1.1;
-    margin-bottom:20px;
-    font-weight:800;
+    font-size:clamp(2.8rem,5vw,5rem);
+    margin-bottom:25px;
 }
 
 h2{
-    font-size:2.2rem;
+    font-size:clamp(2rem,4vw,3rem);
     margin-bottom:20px;
+    text-align:center;
 }
 
 p{
-    color:#4b5563;
     margin-bottom:20px;
 }
 
 .btn{
     display:inline-block;
-    background:#0f766e;
+    background:#E5484D;
     color:#fff;
-    padding:16px 28px;
-    border-radius:10px;
+    padding:16px 30px;
+    border-radius:4px;
     text-decoration:none;
     font-weight:600;
     transition:0.3s ease;
 }
 
 .btn:hover{
-    background:#115e59;
+    background:#cc3b40;
     transform:translateY(-2px);
 }
 
-.hero{
-    min-height:100vh;
+header{
+    padding:25px 0;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #eee;
+}
+
+.nav{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    background:#f9fafb;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    color:#111;
+}
+
+.logo span{
+    color:#E5484D;
+}
+
+.hero{
+    background:#F7F7F7;
 }
 
 .hero-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
+    gap:70px;
     align-items:center;
 }
 
-.hero-card{
-    background:#fff;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+.hero-image img{
+    width:100%;
+    border-radius:6px;
+}
+
+.hero-sub{
+    max-width:550px;
+    font-size:1.05rem;
 }
 
 .stats{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    text-align:center;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:70px;
 }
 
 .stat{
-    padding:30px;
     background:#fff;
-    border-radius:16px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    padding:35px;
+    text-align:center;
+    border-top:4px solid #E5484D;
 }
 
 .stat h3{
     font-size:2rem;
-    color:#0f766e;
+    margin-bottom:10px;
 }
 
-.features{
+.services{
+    background:#fff;
+}
+
+.service-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:30px;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:60px;
 }
 
-.feature{
-    background:#f9fafb;
-    padding:30px;
-    border-radius:16px;
+.card{
+    background:#F7F7F7;
+    padding:35px;
+    transition:0.3s ease;
 }
 
-.process{
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.testimonial{
+    background:#1F1F28;
+    color:#fff;
+}
+
+.testimonial h2{
+    color:#fff;
+}
+
+.quote{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:1.15rem;
+}
+
+.quote strong{
+    display:block;
+    margin-top:20px;
+    color:#E5484D;
+}
+
+.process-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
+    margin-top:50px;
 }
 
 .step{
     text-align:center;
-    padding:30px;
+    padding:40px 30px;
+    background:#F7F7F7;
 }
 
-.step-number{
-    width:60px;
-    height:60px;
-    margin:auto;
-    border-radius:50%;
-    background:#0f766e;
+.number{
+    width:65px;
+    height:65px;
+    background:#E5484D;
     color:#fff;
+    border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin:0 auto 20px;
     font-weight:700;
-    margin-bottom:20px;
 }
 
-.form-section{
-    background:#111827;
-    color:#fff;
+.cta{
+    background:#F7F7F7;
     text-align:center;
 }
 
-.form-section p{
-    color:#d1d5db;
-}
-
 form{
-    max-width:600px;
+    max-width:650px;
     margin:40px auto 0;
 }
 
 input,
 textarea{
     width:100%;
-    padding:16px;
-    margin-bottom:20px;
-    border:none;
-    border-radius:10px;
+    padding:18px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
     font-size:1rem;
+    font-family:'Inter',sans-serif;
 }
 
 textarea{
-    min-height:120px;
+    min-height:140px;
 }
 
 button{
     border:none;
     cursor:pointer;
 }
-    
+
+footer{
+    background:#1F1F28;
+    color:#fff;
+    padding:50px 0;
+    text-align:center;
+}
+
 .sticky-cta{
     position:fixed;
     bottom:20px;
     right:20px;
     z-index:999;
-}    
-
-footer{
-    padding:30px 0;
-    text-align:center;
-    background:#f3f4f6;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 .hero-grid,
-.features,
-.process,
+.service-grid,
+.process-grid,
 .stats{
     grid-template-columns:1fr;
 }
 
-.hero{
-    padding-top:100px;
+section{
+    padding:70px 0;
 }
 
 h1{
-    font-size:2.8rem;
-}
-
-section{
-    padding:60px 0;
+    font-size:3rem;
 }
 
 }
@@ -218,143 +281,202 @@ section{
 
 <body>
 
+<header>
+<div class="container nav">
+
+<div class="logo">
+oc<span>fo.</span>
+</div>
+
+<a href="#contact" class="btn">
+Schedule a Consultation
+</a>
+
+</div>
+</header>
+
 <section class="hero">
+
 <div class="container hero-grid">
 
 <div>
-<h1>Financial Clarity for Growing Businesses</h1>
 
-<p>
-Outsourced CFO helps startups and SMEs improve cash flow,
-forecasting, and strategic financial decision-making without
-the cost of a full-time CFO.
+<h1>
+Building a world-class finance function for your growing company
+</h1>
+
+<p class="hero-sub">
+Outsourced CFO helps ambitious SMEs rethink, automate and scale with CFO services, cloud accounting and financial technology expertise.
 </p>
 
-<a href="#contact" class="btn">Book a Free Strategy Call</a>
+<a href="#contact" class="btn">
+Speak to a CFO Expert
+</a>
+
 </div>
 
-<div class="hero-card">
-<h2>Why Businesses Choose Outsourced CFO</h2>
-
-<p>✔ Improve cash flow visibility</p>
-<p>✔ Investor-ready reporting</p>
-<p>✔ Strategic financial planning</p>
-<p>✔ Expert CFO guidance on demand</p>
-
-<a href="#contact" class="btn">Get Started</a>
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="">
 </div>
 
 </div>
-</section>
 
-<section>
 <div class="container">
 
 <div class="stats">
 
 <div class="stat">
-<h3>500+</h3>
-<p>Businesses Supported</p>
+<h3>1300+</h3>
+<p>Organisations Supported</p>
 </div>
 
 <div class="stat">
-<h3>R2B+</h3>
+<h3>34+</h3>
+<p>Countries Served</p>
+</div>
+
+<div class="stat">
+<h3>$100m+</h3>
 <p>Capital Raised</p>
 </div>
 
 <div class="stat">
-<h3>15+</h3>
-<p>Years Experience</p>
+<h3>25+</h3>
+<p>Industries Supported</p>
 </div>
 
 </div>
 
 </div>
+
+</section>
+
+<section class="services">
+
+<div class="container">
+
+<h2>Financial Management Services</h2>
+
+<p style="text-align:center; max-width:750px; margin:auto;">
+We offer founders innovative financial insight, world-class financial technology and peace of mind.
+</p>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>CFO Services</h3>
+<p>
+Strategic financial leadership, forecasting and decision-making support for scaling businesses.
+</p>
+</div>
+
+<div class="card">
+<h3>Cloud Accounting</h3>
+<p>
+Accurate bookkeeping, reporting and cloud-based accounting systems built for growth.
+</p>
+</div>
+
+<div class="card">
+<h3>Automation</h3>
+<p>
+Streamline operations and integrate modern finance systems for greater efficiency.
+</p>
+</div>
+
+<div class="card">
+<h3>Talent Solutions</h3>
+<p>
+Access experienced finance professionals tailored to your business requirements.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonial">
+
+<div class="container">
+
+<h2>What Our Clients Say</h2>
+
+<div class="quote">
+
+<p>
+“We moved over to Outsourced CFO as we started to scale. They brought in great cloud technology solutions, predictable costs and strategic financial input. We now have total peace of mind around our financial function.”
+</p>
+
+<strong>
+Founder • Managed IT Services Company
+</strong>
+
+</div>
+
+</div>
+
 </section>
 
 <section>
+
 <div class="container">
 
-<h2>Common Financial Challenges We Solve</h2>
+<h2>How It Works</h2>
 
-<div class="features">
-
-<div class="feature">
-<h3>Cash Flow Uncertainty</h3>
-<p>
-Gain visibility into your finances and make better
-business decisions with confidence.
-</p>
-</div>
-
-<div class="feature">
-<h3>Investor Reporting</h3>
-<p>
-Prepare accurate reporting and forecasts that help
-secure funding opportunities.
-</p>
-</div>
-
-<div class="feature">
-<h3>Scaling Operations</h3>
-<p>
-Build financial systems and processes designed
-for sustainable growth.
-</p>
-</div>
-
-<div class="feature">
-<h3>Strategic Planning</h3>
-<p>
-Get expert financial guidance aligned with your
-business goals.
-</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section style="background:#f9fafb;">
-<div class="container">
-
-<h2 style="text-align:center;">How It Works</h2>
-
-<div class="process">
+<div class="process-grid">
 
 <div class="step">
-<div class="step-number">1</div>
-<h3>Book a Call</h3>
-<p>Schedule a free financial strategy consultation.</p>
+
+<div class="number">1</div>
+
+<h3>Book a Consultation</h3>
+
+<p>
+Tell us about your business, growth plans and financial challenges.
+</p>
+
 </div>
 
 <div class="step">
-<div class="step-number">2</div>
-<h3>Meet Your CFO Advisor</h3>
-<p>Discuss your financial goals and business challenges.</p>
+
+<div class="number">2</div>
+
+<h3>Meet Your CFO Team</h3>
+
+<p>
+We match you with finance professionals suited to your company needs.
+</p>
+
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
+
+<div class="number">3</div>
+
 <h3>Scale With Confidence</h3>
-<p>Receive practical financial guidance and reporting.</p>
-</div>
+
+<p>
+Gain clarity, systems and financial insight to support long-term growth.
+</p>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
-<section class="form-section" id="contact">
+<section class="cta" id="contact">
 
 <div class="container">
 
-<h2>Ready to Gain Financial Clarity?</h2>
+<h2>Ready to Scale Smarter?</h2>
 
-<p>
-Book your free strategy call and discover how Outsourced CFO
-can help your business scale smarter.
+<p style="max-width:700px; margin:auto;">
+Book a consultation with Outsourced CFO and discover how a world-class finance function can support your growth.
 </p>
 
 <form>
@@ -365,10 +487,10 @@ can help your business scale smarter.
 
 <input type="text" placeholder="Company Name">
 
-<textarea placeholder="What financial challenges are you facing?"></textarea>
+<textarea placeholder="Tell us about your business goals"></textarea>
 
 <button class="btn" type="submit">
-Book My Free Call
+Book My Consultation
 </button>
 
 </form>
@@ -378,12 +500,20 @@ Book My Free Call
 </section>
 
 <footer>
+
 <div class="container">
-<p>© 2026 Outsourced CFO. All rights reserved.</p>
+
+<p>
+© 2026 Outsourced CFO • Building world-class finance functions for growing companies.
+</p>
+
 </div>
+
 </footer>
+
 <a href="#contact" class="btn sticky-cta">
 Book Call
 </a>
+
 </body>
 </html>
